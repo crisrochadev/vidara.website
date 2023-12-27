@@ -1,6 +1,6 @@
 <template>
-    <div :class="{ dark: dark }" class="w-screen h-screen">
-      <div class="bg-white dark:bg-gray-700 w-full h-full">
+    <div :class="{ dark: dark }" class="w-screen h-screen overflow-x-hidden">
+      <div class="bg-white dark:bg-gray-700 w-full h-full relative">
         <HeaderComponent v-model:mode="mode" :dark="dark" />
         <router-view :key="$router.path" />
       </div>

@@ -1,11 +1,11 @@
 <template>
   <div
-    class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800"
+    class="grid mb-8 gap-4 rounded-lg shadow-sm  md:mb-12 md:grid-cols-2"
   >
     <figure
       v-for="index in 4"
       :key="index"
-      class="flex flex-col items-center justify-center p-8 text-center bg-gray-200 border-b border-gray-300 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-900 dark:border-gray-800"
+      class="flex rounded  flex-col items-center justify-center p-8 text-center bg-gray-200 border-b border-gray-300   md:border-e dark:bg-blue-900 dark:border-blue-800"
     >
       <blockquote
         class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"

@@ -1,22 +1,79 @@
 <template>
-  <header class=" backdrop-blur-md flex justify-between items-center px-4 h-[60px] fixed top-0 left-0 z-[9999] w-full">
-<div class="w-full md:w-auto h-full flex justify-start items-center">
-    <img width="60px" :src="dark ? '/img/logo-dark.png' :'/img/logo.png'" alt="Vidara Websites - Sites em Rio Negrinho" />
-
-</div>
-    <nav class="relative h-full flex justify-end items-center order-3 md:order-2">
-        <label for="menu_toggle" class="block md:hidden">
-            <span class="material-icons-outlined dark:text-white text-blue-800">menu</span>
-        </label>
-        <input ref="toggle_menu" type="checkbox"  class="group hidden" id="menu_toggle">
-      <ul class="absolute w-40 md:w-auto rounded shadow-slate-800 md:shadow-none  md:relative flex flex-col md:flex-row md:justify-end items-center gap-2 dark:bg-gray-800 md:dark:bg-transparent md:bg-transparent bg-white  shadow-md right-2 menu_box invisible md:visible top-0 md:top-auto transition-all delay-100">
-        <li v-for="item in menu" :key="menu.id" class="w-full text-left dark:hover:bg-gray-600 hover:bg-pink-100">
-          <a @click="$refs.toggle_menu.checked = 0" class="uppercase  dark:text-white text-blue-800 hover:text-white hover:bg-blue-800 block w-full  p-2" :href="item.to">{{ item.label }}</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="flex order-2 md:order-3">
-      <ThemeMenu v-model:theme="themeMode"/>
+  <header
+    class="w-full h-[60px] z-[9999] fixed px-4 flex justify-between items-center backdrop-blur-lg"
+  >
+    <h1 class="w-[60px] h-[60px] flex justify-center items-center">
+      <img
+        class="w-[40px] h-[40px]"
+        :src="`/img/${dark ? 'logo' : 'logo-dark'}.png`"
+        title="Vidara Websites - Criação de Sites em Rio Negrinho"
+        alt="Vidara Websites - Criação de Sites em Rio Negrinho"
+      />
+    </h1>
+    <ul class="hidden md:flex flex-1  justify-center items-center gap-2">
+      <li v-for="item in menu" :key="item.id">
+      <a :href="item.to" class=" p-2 uppercase text-blue-800 dark:text-pink-100 font-bold hover:bg-blue-800 hover:text-pink-100 dark:hover:bg-pink-100 dark:hover:text-blue-800 transition-colors delay-75">{{ item.label }}</a>
+      </li>
+    </ul>
+    <div class="flex justify-end items-center gap-2  h-full">
+      <div class="block">
+        <label for="theme_toggle" ref="label_theme_toggle">
+          <span class="material-icons-outlined text-blue-800 cursor-pointer dark:text-pink-100 hover:text-blue-900 dark:hover:text-pink-200">{{
+            themeMode.icon
+          }}</span></label
+        >
+        <input
+          ref="theme_toggle"
+          type="checkbox"
+          id="theme_toggle"
+          class="hidden peer"
+        />
+        <ul
+          class="absolute peer-checked:top-[40px] bg-white dark:bg-gray-800 p-2 right-4 -top-8 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-all delay-75"
+        >
+          <li
+            @click="changeTheme({ id: 2, label: 'Claro', icon: 'light_mode' })"
+            class="w-full h-full p-2 flex justify-start items-center text-gray-800 dark:text-pink-100 gap-2 hover:bg-pink-100 dark:hover:bg-gray-900"
+            href=""
+          >
+            <span class="material-icons-outlined">light_mode</span>
+            <span>Claro</span>
+          </li>
+          <li
+            @click="changeTheme({ id: 1, label: 'Escuro', icon: 'dark_mode' })"
+            class="w-full h-full p-2 flex justify-start items-center text-gray-800 dark:text-pink-100 gap-2 hover:bg-pink-100 dark:hover:bg-gray-900"
+            href=""
+          >
+            <span class="material-icons-outlined">dark_mode</span>
+            <span>Escuro</span>
+          </li>
+          <li
+            @click="changeTheme({ id: 3, label: 'Sistema', icon: 'computer' })"
+            class="w-full h-full p-2 flex justify-start items-center text-gray-800 dark:text-pink-100 gap-2 hover:bg-pink-100 dark:hover:bg-gray-900"
+            href=""
+          >
+            <span class="material-icons-outlined">computer</span>
+            <span>Sistema</span>
+          </li>
+        </ul>
+      </div>
+      <div class="block md:hidden">
+        <label for="menu_toggle" ref="label_menu_toggle">
+          <span class="material-icons-outlined text-blue-800 cursor-pointer hover:text-blue-900 dark:hover:text-pink-200 dark:text-pink-100">menu</span></label
+        >
+        <input type="checkbox" id="menu_toggle" ref="menu_toggle" class="hidden peer" />
+        <ul
+          class="absolute peer-checked:top-[40px] bg-white dark:bg-gray-800 p-2 right-4 -top-8 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-all delay-75"
+        >
+          <li
+            v-for="item in menu"
+            :key="item.id"
+            class="w-full h-full  hover:bg-pink-100 dark:hover:bg-gray-900"
+          >
+            <a @click="$refs.menu_toggle.checked = 0" :href="item.to" class="w-full h-full p-2 flex justify-start items-center text-gray-800 dark:text-pink-100 gap-2">{{ item.label }}</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 </template>
@@ -31,33 +88,33 @@ export default {
   data() {
     return {
       hidden: true,
-      menu:[
+      menu: [
         {
-            id:1,
-            to:"#home",
-            label:'Home'
+          id: 1,
+          to: "#home",
+          label: "Home",
         },
         {
-            id:2,
-            to:"#sobre",
-            label:'Sobre'
+          id: 2,
+          to: "#sobre",
+          label: "Sobre",
         },
         {
-            id:3,
-            to:"#servicos",
-            label:'Serviços'
+          id: 3,
+          to: "#servicos",
+          label: "Serviços",
         },
         {
-            id:4,
-            to:"#Orcamento",
-            label:'Orçamento'
+          id: 4,
+          to: "#Orcamento",
+          label: "Orçamento",
         },
         {
-            id:5,
-            to:"#contato",
-            label:'Contato'
-        }
-      ]
+          id: 5,
+          to: "#contato",
+          label: "Contato",
+        },
+      ],
     };
   },
   computed: {
@@ -71,17 +128,24 @@ export default {
     },
   },
   methods: {
+    changeTheme(theme) {
+      this.themeMode = theme;
+      this.$refs.theme_toggle.checked = 0;
+    },
   },
-};
-</script>
-<style>
-#menu_toggle{
-    display: none;
+  mounted() {
+  document.addEventListener('click', (e) => {
+    // Fechar o menu se clicar fora
+    if (this.$refs.menu_toggle && this.$refs.menu_toggle.checked && !e.target.closest('#menu_toggle')) {
+      this.$refs.menu_toggle.checked = false;
+    }
+
+    // Fechar o tema se clicar fora
+    if (this.$refs.theme_toggle && this.$refs.theme_toggle.checked && !e.target.closest('#theme_toggle')) {
+      this.$refs.theme_toggle.checked = false;
+    }
+  });
 }
 
-#menu_toggle:checked ~ .menu_box{
-    visibility: visible !important;
-    top:45px !important;
-    opacity: 1 !important;
-}
-</style>
+};
+</script>

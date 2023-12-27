@@ -20,12 +20,10 @@
         :variants="{ custom: { scale: 2 } }"
         :hovered="{ scale: 1.2 }"
         :delay="200"
-        class="flex flex-col justify-center items-center gap-4"
+        class="flex flex-col justify-center items-center gap-4 w-1/4"
       >
           <component :is="info.icon"></component>
-        <p class="uppercase font-extrabold text-center text-xs md:text-lg">
-          {{ info.label }}
-        </p>
+       
       </a>
     </article>
     <ContactForm />
