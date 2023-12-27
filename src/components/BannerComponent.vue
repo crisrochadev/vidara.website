@@ -36,7 +36,7 @@
             <span class="material-icons-outlined mr-2 text-blue-800"
               >phone</span
             >
-            Entre am contato
+            Entre em contato
           </a>
 
           <a
