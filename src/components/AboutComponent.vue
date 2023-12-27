@@ -13,7 +13,7 @@
       >
     </div>
     <div
-      class="flex justify-center my-4 gap-4 overflow-x-auto overflow-y-hidden mx-[5%]"
+      class="flex justify-start md:justify-center my-4 gap-4 overflow-x-auto overflow-y-hidden mx-[5%]"
     >
       <div
         v-for="item in items"
