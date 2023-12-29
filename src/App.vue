@@ -15,6 +15,10 @@ export default {
       titleTemplate: "%s | Coloque sua empresa no google",
       meta: [
         {
+          name:"description",
+          content: "Criação de sites em Rio Negrinho, coloque sua empresa no google e seja encontrado na internet!"
+        },
+        {
           charset: "UTF-8",
         },
         {
