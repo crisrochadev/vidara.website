@@ -5,25 +5,13 @@
       description="Vidara Websites - Criação de sites em Rio Negrinho: Onde Experiência e Paixão se Unem para Elevar Pequenos Negócios Locais na Era Digital."
     />
 
-    <div class="w-full h-10 flex justify-end items-center xl:hidden">
-      <span
-        @click="scrollTo(10)"
-        class="material-icons-outlined animate-pulse text-pink-700 dark:text-pink-100"
-        >arrow_forward</span
-      >
-    </div>
-    <div
-      class="flex justify-start md:justify-center my-4 gap-4 overflow-x-auto overflow-y-hidden mx-[5%]"
-    >
-      <div
+    <Splide :options="options" class="w-full px-[5%] py-4">
+      <SplideSlide
         v-for="item in items"
         :key="item.id"
-        v-motion
-        :initial="{ opacity: 0, y: 100 }"
-        :visible="{ opacity: 1, y: 0 }"
-        class="max-w-sm bg-whit min-w-[320px] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 grid grid-rows-2"
+        class="shadow-md rounded grid grid-rows-2 w-11/12 bg-gray-100 dark:bg-gray-900 p-4 max-h-[600px]"
       >
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center w-11/12 mx-auto h-full p-4">
           <img class="rounded-t-lg" :src="item.image" :alt="item.title" />
         </div>
         <header class="p-5 flex flex-col justify-center items-center">
@@ -36,8 +24,8 @@
             {{ item.description }}
           </p>
         </header>
-      </div>
-    </div>
+      </SplideSlide>
+    </Splide>
   </section>
 </template>
 <script>
@@ -79,7 +67,36 @@ export default {
       ],
     };
   },
-
+  computed: {
+    options() {
+      return {
+        type: "loop",
+        perPage:4,
+        mediaQuery: 'min',
+        breakpoints: {
+          480:{
+            perPage:1
+          },
+          640: {
+            perPage: 2,
+          },
+          1024:{
+            perPage:3
+          },
+          1100:{
+            classes:{
+              arrows:'hidden'
+            },
+            perPage:4
+          }
+        },
+        gap: "20px",
+        autoplay: true,
+        interval: 4000,
+        pauseOnHover: true,
+      };
+    },
+  },
   components: { WaveComponent, TitleDescription },
 };
 </script>
