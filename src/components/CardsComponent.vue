@@ -2,7 +2,7 @@
   <div
     class="grid mb-8 gap-4 rounded-lg shadow-sm  md:mb-12 md:grid-cols-2"
   >
-    <figure
+    <p
     
       v-for="card in cards"
       :key="card.id"
@@ -18,7 +18,7 @@
           {{card.description}}
         </p>
       </blockquote>
-      <figcaption class="flex items-center justify-center" v-motion
+      <p class="flex items-center justify-center" v-motion
         :initial="{ opacity: 0, x: 100 }"
         :visible="{ opacity: 1, x: 0, scale: 1 }"
         :variants="{ custom: { scale: 2 } }"
@@ -30,8 +30,8 @@
         >
           <img width="auto" height="auto"  :src="card.img" :alt="card.title"/>
         </div>
-      </figcaption>
-    </figure>
+      </p>
+    </p>
   </div>
 </template>
 <script>

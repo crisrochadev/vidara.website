@@ -30,6 +30,8 @@
           class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4 justify-center lg:justify-start"
         >
           <a
+            title="Contato"
+            alt="Contato"
             href="#contato"
             class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
@@ -40,6 +42,8 @@
           </a>
 
           <a
+            title="Nossos Serviços"
+            alt="Nossos Serviços"
             href="#nossos-servicos"
          
             class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"

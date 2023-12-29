@@ -13,7 +13,7 @@
     </h1>
     <ul class="hidden md:flex flex-1  justify-center items-center gap-2">
       <li v-for="item in menu" :key="item.id">
-      <a :href="item.to" class=" p-2 uppercase text-blue-800 dark:text-pink-100 font-bold hover:bg-blue-800 hover:text-pink-100 dark:hover:bg-pink-100 dark:hover:text-blue-800 transition-colors delay-75">{{ item.label }}</a>
+      <a :title="item.label" :alt="item.label" :href="item.to" class=" p-2 uppercase text-blue-800 dark:text-pink-100 font-bold hover:bg-blue-800 hover:text-pink-100 dark:hover:bg-pink-100 dark:hover:text-blue-800 transition-colors delay-75">{{ item.label }}</a>
       </li>
     </ul>
     <div class="flex justify-end items-center gap-2  h-full">
@@ -71,7 +71,7 @@
             :key="item.id"
             class="w-full h-full  hover:bg-pink-100 dark:hover:bg-gray-900"
           >
-            <a @click="$refs.menu_toggle.checked = 0" :href="item.to" class="w-full h-full p-2 flex justify-start items-center text-gray-800 dark:text-pink-100 gap-2">{{ item.label }}</a>
+            <a :title="item.label" :alt="item.label" @click="$refs.menu_toggle.checked = 0" :href="item.to" class="w-full h-full p-2 flex justify-start items-center text-gray-800 dark:text-pink-100 gap-2">{{ item.label }}</a>
           </li>
         </ul>
       </div>

@@ -11,6 +11,8 @@
         v-for="info in infos"
         :key="info.id"
         :href="info.link"
+        :title="info.icon"
+        :alt="info.icon"
         target="_blank"
         v-motion
         :initial="{ opacity: 0, x: 100 }"

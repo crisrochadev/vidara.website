@@ -6,19 +6,19 @@
       </header>
       <ul>
         <li class="border my-4 rounded  border-blue-800 dark:border-pink-100 h-8">
-          <a class="w-full h-full hover:bg-blue-800 dark:hover:bg-pink-100 hover:text-pink-100 dark:hover:text-blue-800 transition-colors delay-100 flex justify-start items-center px-4 text-blue-800 dark:text-pink-100" href="#home">Inicio</a>
+          <a class="w-full h-full hover:bg-blue-800 dark:hover:bg-pink-100 hover:text-pink-100 dark:hover:text-blue-800 transition-colors delay-100 flex justify-start items-center px-4 text-blue-800 dark:text-pink-100" href="#home" title="Inicio" alt="inicio">Inicio</a>
         </li>
         <li class="border my-4 rounded  border-blue-800 dark:border-pink-100 h-8">
-          <a class="w-full h-full hover:bg-blue-800 dark:hover:bg-pink-100 hover:text-pink-100 dark:hover:text-blue-800 transition-colors delay-100 flex justify-start items-center px-4 text-blue-800 dark:text-pink-100" href="#sobre">Sobre</a>
+          <a class="w-full h-full hover:bg-blue-800 dark:hover:bg-pink-100 hover:text-pink-100 dark:hover:text-blue-800 transition-colors delay-100 flex justify-start items-center px-4 text-blue-800 dark:text-pink-100" href="#sobre" title="Sobre" alt="Sobre">Sobre</a>
         </li>
         <li class="border my-4 rounded  border-blue-800 dark:border-pink-100 h-8">
-          <a class="w-full h-full hover:bg-blue-800 dark:hover:bg-pink-100 hover:text-pink-100 dark:hover:text-blue-800 transition-colors delay-100 flex justify-start items-center px-4 text-blue-800 dark:text-pink-100" href="#servicos">Servicos</a>
+          <a class="w-full h-full hover:bg-blue-800 dark:hover:bg-pink-100 hover:text-pink-100 dark:hover:text-blue-800 transition-colors delay-100 flex justify-start items-center px-4 text-blue-800 dark:text-pink-100" href="#servicos" title="Serviços" alt="Serviços">Servicos</a>
         </li>
         <li class="border my-4 rounded  border-blue-800 dark:border-pink-100 h-8">
-          <a class="w-full h-full hover:bg-blue-800 dark:hover:bg-pink-100 hover:text-pink-100 dark:hover:text-blue-800 transition-colors delay-100 flex justify-start items-center px-4 text-blue-800 dark:text-pink-100" href="#Orcamento">Orçamento</a>
+          <a class="w-full h-full hover:bg-blue-800 dark:hover:bg-pink-100 hover:text-pink-100 dark:hover:text-blue-800 transition-colors delay-100 flex justify-start items-center px-4 text-blue-800 dark:text-pink-100" href="#Orcamento" title="Orçamento" alt="Orçamento">Orçamento</a>
         </li>
         <li class="border my-4 rounded  border-blue-800 dark:border-pink-100 h-8">
-          <a class="w-full h-full hover:bg-blue-800 dark:hover:bg-pink-100 hover:text-pink-100 dark:hover:text-blue-800 transition-colors delay-100 flex justify-start items-center px-4 text-blue-800 dark:text-pink-100" href="#contato">Contato</a>
+          <a class="w-full h-full hover:bg-blue-800 dark:hover:bg-pink-100 hover:text-pink-100 dark:hover:text-blue-800 transition-colors delay-100 flex justify-start items-center px-4 text-blue-800 dark:text-pink-100" href="#contato" title="Contato" alt="Contato">Contato</a>
         </li>
       </ul>
     </div>

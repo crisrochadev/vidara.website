@@ -38,7 +38,7 @@ export default {
       items: [
         {
           id: 1,
-          title: "5+ Anos Transformando Ideias em Realidade Online",
+          title: "Transformando Ideias em Realidade Online",
           description:
             "Desenvolvemos sites de qualidade para destacar sua marca, alavancando sua presença digital com eficiência e inovação.",
           image: "/img/1.svg",

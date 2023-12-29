@@ -5,6 +5,8 @@
         class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative"
       >
         <a
+          title="Formulario de Orçamento"
+          alt="Formulario de Orçamento"
           href="/formulario-orcamento"
           class="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"
         >
