@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('../banner.png')",
-        'hero-dark': "url('../banner-dark.png')",
+        'hero': "url('../banner.webp')",
+        'hero-dark': "url('../banner-dark.webp')",
       },
     },
   },

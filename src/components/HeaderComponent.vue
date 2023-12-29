@@ -101,7 +101,7 @@ export default {
         },
         {
           id: 3,
-          to: "#servicos",
+          to: "#nossos-servicos",
           label: "Serviços",
         },
         {

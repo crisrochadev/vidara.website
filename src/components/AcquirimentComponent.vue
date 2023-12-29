@@ -1,13 +1,11 @@
 <template>
-  <section id="Orcamento" >
-    <div
-      class="bg-white dark:bg-gray-900"
-    >
+  <section id="Orcamento">
+    <div class="bg-white dark:bg-gray-900">
       <header
         class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative"
       >
         <a
-          href="#"
+          href="/formulario-orcamento"
           class="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"
         >
           <span
@@ -22,15 +20,21 @@
         <h1
           class="uppercase mb-4 text-4xl font-extrabold tracking-tight leading-none text-blue-900 md:text-5xl lg:text-6xl dark:text-white"
         >
-          We invest in the world’s potential
+          Vamos colocar seu negócio online?
         </h1>
         <p
           class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200"
         >
-          Here at Flowbite we focus on markets where technology, innovation, and
-          capital can unlock long-term value and drive economic growth.
+          Para fazer seu negócio ser encontrado online, deixe que nosso serviço
+          de criação de site em Rio Negrinho garanta seu espaço na internet! Seja
+          encontrado, coloque seu telefone e entraremos em contato.
         </p>
-        <form class="w-full max-w-md mx-auto" v-motion :initial="{opacity:0, scale:0.8}" :visible="{opacity:1, scale:1}">
+        <form
+          class="w-full max-w-md mx-auto"
+          v-motion
+          :initial="{ opacity: 0, scale: 0.8 }"
+          :visible="{ opacity: 1, scale: 1 }"
+        >
           <label
             for="default-email"
             class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -56,16 +60,15 @@
             </button>
           </div>
         </form>
-    </header>
+      </header>
       <div
         class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0"
       ></div>
     </div>
-    
   </section>
 </template>
 <script>
-import WaveComponent from './WaveComponent.vue';
+import WaveComponent from "./WaveComponent.vue";
 
 export default { components: { WaveComponent } };
 </script>

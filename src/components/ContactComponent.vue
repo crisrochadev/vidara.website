@@ -2,9 +2,7 @@
   <section class="dark:bg-gray-800 bg-gray-100 pt-20" id="contato">
     <TitleDescription
       title="Entre em contato"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi
-          accusamus laboriosam reiciendis quae ducimus eveniet? Esse rerum
-          excepturi cupiditate."
+      description="Você pode entrar em contato e tirar suas dúvidas, preencha o formulário abaixo."
     />
     <article
       class="flex justify-around items-center gap-2 flex-wrap my-8 w-11/12 mx-auto"
