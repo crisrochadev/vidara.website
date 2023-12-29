@@ -72,7 +72,6 @@ export default {
       return {
         type: "loop",
         perPage:4,
-        mediaQuery: 'min',
         breakpoints: {
           480:{
             perPage:1
