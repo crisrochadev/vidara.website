@@ -25,6 +25,7 @@
     <div class="flex justify-center flex-col items-center order-1 lg:order-2 w-full lg:w-1/3">
       <div class="w-40">
         <img
+        width="auto" height="auto" 
         class="w-full h-full object-cover"
         src="/img/logo.png"
         alt="Vidara Websites - Criação de sites em Rio Negrinho"

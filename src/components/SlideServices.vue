@@ -12,6 +12,8 @@
           data-carousel-item="active"
         >
           <img
+          width="auto"
+          height="auto"
             src="/img/logo.png"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
@@ -21,6 +23,8 @@
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
+          width="auto"
+          height="auto"
             src="/img/logo.png"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
@@ -29,6 +33,8 @@
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
+          width="auto"
+          height="auto"
             src="/img/logo.png"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
@@ -37,6 +43,8 @@
         <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
+          width="auto"
+          height="auto"
             src="/img/logo.png"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
@@ -45,6 +53,8 @@
         <!-- Item 5 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
+          width="auto"
+          height="auto"
             src="/img/logo.png"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."

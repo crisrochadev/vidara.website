@@ -12,7 +12,7 @@
         class="shadow-md rounded grid grid-rows-2 w-11/12 bg-gray-100 dark:bg-gray-900 p-4 max-h-[600px]"
       >
         <div class="flex justify-center items-center w-11/12 mx-auto h-full p-4">
-          <img class="rounded-t-lg" :src="item.image" :alt="item.title" />
+          <img width="auto" height="auto" class="rounded-t-lg" :src="item.image" :alt="item.title" />
         </div>
         <header class="p-5 flex flex-col justify-center items-center">
           <h1

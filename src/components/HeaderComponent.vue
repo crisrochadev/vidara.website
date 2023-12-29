@@ -4,6 +4,7 @@
   >
     <h1 class="w-[60px] h-[60px] flex justify-center items-center">
       <img
+      width="auto" height="auto" 
         class="w-[40px] h-[40px]"
         :src="`/img/${dark ? 'logo' : 'logo-dark'}.png`"
         title="Vidara Websites - Criação de Sites em Rio Negrinho"

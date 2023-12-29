@@ -28,7 +28,7 @@
         <div
           class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3"
         >
-          <img :src="card.img" :alt="card.title"/>
+          <img width="auto" height="auto"  :src="card.img" :alt="card.title"/>
         </div>
       </figcaption>
     </figure>

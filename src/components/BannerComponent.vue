@@ -61,7 +61,7 @@
         :hovered="{ scale: 1.2 }"
         :delay="200"
       >
-        <img ref="img_banner" src="/img/hero.svg" alt="hero image" />
+        <img width="auto" height="auto"  ref="img_banner" src="/img/hero.svg" alt="hero image" />
       </article>
     </div>
     <WaveComponent color="dark:fill-gray-800 fill-white"/>
